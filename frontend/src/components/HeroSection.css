@@ -1,0 +1,40 @@
+.hero-background {
+    background-image: url('one.png'); /* Update with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use flexbox for centering content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    position: relative; /* Position relative for absolute children */
+}
+
+.hero-overlay {
+    position: absolute; /* Position overlay on top of the background */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: dark overlay for better text contrast */
+    display: flex; /* Use flexbox for centering content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+@media (max-width: 70000px) { /* For laptops and smaller screens */
+    .hero-background {
+        height: 80vh; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 608px) { /* For tablets and smaller screens */
+    .hero-background {
+        height: 60vh; /* Further adjust height */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+    .hero-background {
+        height: 50vh; /* Further adjust height */
+    }
+}

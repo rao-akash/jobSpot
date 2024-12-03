@@ -1,0 +1,29 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Intense Fiery Background with flames effect -->
+  <defs>
+    <radialGradient id="creativeFireGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff8c00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+    </radialGradient>
+    <filter id="flameEffect" x="0" y="0">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="5" />
+      <feDisplacementMap in="SourceGraphic" scale="10" />
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="80" fill="url(#creativeFireGrad)" filter="url(#flameEffect)" />
+
+  <!-- Inner Circle for the head with glow -->
+  <circle cx="100" cy="70" r="20" fill="#ffffff" stroke="#ffd700" stroke-width="4" />
+  <circle cx="100" cy="70" r="22" fill="none" stroke="#ff4500" stroke-width="2" opacity="0.8" />
+
+  <!-- Tie with flickering flame details -->
+  <polygon points="90,90 100,140 110,90" fill="#ff4500" stroke="#ffd700" stroke-width="2" />
+  <path d="M95,110 Q100,80 105,110 Q100,115 95,110" fill="#ff8c00" opacity="0.9" />
+  <path d="M98,100 Q100,85 102,100 Q100,105 98,100" fill="#ffd700" opacity="0.8" />
+
+  <!-- Text with a blazing fiery gradient effect -->
+  <text x="40" y="180" font-family="Arial, sans-serif" font-size="24" font-weight="bold"
+        fill="url(#creativeFireGrad)" stroke="#ff4500" stroke-width="1.5">JobSpot</text>
+</svg>
